@@ -114,6 +114,8 @@ typedef enum opr Operator;
     calc = [[Calculator alloc] init];
     currentQpr = none;
     currentValue = 0;
+    
+    self.myLabel.text = @"0";
 }
 
 - (void)didReceiveMemoryWarning {
