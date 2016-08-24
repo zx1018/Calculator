@@ -13,6 +13,7 @@
 		CE3D868E1D6D208600FCE418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3D868C1D6D208600FCE418 /* Main.storyboard */; };
 		CE3D86901D6D208600FCE418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3D868F1D6D208600FCE418 /* Assets.xcassets */; };
 		CE3D86931D6D208600FCE418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3D86911D6D208600FCE418 /* LaunchScreen.storyboard */; };
+		CE3D869C1D6D2C2D00FCE418 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D869B1D6D2C2D00FCE418 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CE3D868F1D6D208600FCE418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3D86921D6D208600FCE418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3D86941D6D208600FCE418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3D869A1D6D2C2D00FCE418 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		CE3D869B1D6D2C2D00FCE418 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		CE3D86821D6D208600FCE418 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CE3D869A1D6D2C2D00FCE418 /* Calculator.h */,
+				CE3D869B1D6D2C2D00FCE418 /* Calculator.m */,
 				CE3D86861D6D208600FCE418 /* AppDelegate.h */,
 				CE3D86871D6D208600FCE418 /* AppDelegate.m */,
 				CE3D86891D6D208600FCE418 /* ViewController.h */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3D868B1D6D208600FCE418 /* ViewController.m in Sources */,
+				CE3D869C1D6D2C2D00FCE418 /* Calculator.m in Sources */,
 				CE3D86881D6D208600FCE418 /* AppDelegate.m in Sources */,
 				CE3D86851D6D208600FCE418 /* main.m in Sources */,
 			);

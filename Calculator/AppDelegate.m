@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Calculator.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,16 @@
 
 @implementation AppDelegate
 
-
+//  프로그램 호출시에 자동으로 호출되는 함수
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    Calculator *calc = [[Calculator alloc] init];
+    
+    [calc setAccumlator:100.0];
+    [calc add:200];
+    NSLog(@"Result = %g" ,[calc accumlator]);
+    
+
     return YES;
 }
 
@@ -25,6 +33,7 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
+// 앱이 백그라운드로 들어갔을 때 호출되는 함수
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
