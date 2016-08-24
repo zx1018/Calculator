@@ -30,12 +30,14 @@ typedef enum opr Operator;
     UIButton *btn = (UIButton *)sender;
     int val = (int)btn.tag;
     
-    if(currentQpr == none) {
-        currentValue = currentValue * 10 + val;
-    }
-    else{
-        currentValue = val;
-    }
+    
+    currentValue = currentValue * 10 + val;
+    //if(currentQpr == none) {
+    //    currentValue = currentValue * 10 + val;
+    //}
+    //else{
+    //    currentValue = val;
+    //}
     
     self.myLabel.text = [NSString stringWithFormat:@"%d", currentValue];
     //NSLog(@"button Clicked");
@@ -72,7 +74,7 @@ typedef enum opr Operator;
     }
     
     [calc setAccumlator: currentValue];
-    
+    currentValue = 0;
 }
 
 // 결과 버튼을 눌렀을 경우
